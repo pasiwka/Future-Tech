@@ -43,6 +43,17 @@
   translate: -50% -50%; // Сдвиг элемента на 50% вверх и влево
 }
 
+@mixin abs-x {
+  position: absolute;
+  left: 50%;
+  translate: -50% ;
+}
+@mixin abs-y {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%; 
+}
+
 // Миксин для создания квадратного элемента
 @mixin square($size) {
   width: $size;
